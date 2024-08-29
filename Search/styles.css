@@ -43,6 +43,13 @@ main {
     width: 300px;
 }
 
+.search-container span {
+    position: absolute;
+    top: 45%;
+    right: 15%;
+    color: blue;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -60,6 +67,7 @@ input[type="text"] {
     color: #333;
     height: 2.5em;
     width: 35em;
+    padding-left: 25px;
 }
 
 input[type="text"]:focus {
@@ -68,8 +76,6 @@ input[type="text"]:focus {
     box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
     
 }
-
-
 
 input[type="text"]:hover {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
