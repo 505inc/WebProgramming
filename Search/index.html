@@ -5,14 +5,14 @@
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
         <title>Google Search</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
-        <link rel='stylesheet' type='text/css' media='screen' href='styles.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='styles-google-search.css'>
         <script src='main.js'></script>
     </head>
     
     <body>
         <div class="main-container">
             <header>
-                <div class="buttons-container">
+                <div class="links-container">
                     <a href="google-image.html">Google Image</a>
                     <a href="google-advanced.html">Google Advanced</a>
                 </div>            
@@ -23,13 +23,16 @@
                     <img src="google-logo.png" alt="Google Logo" />
                     <form action="https://www.google.com/search">
                         <input type="text" name="q" autocomplete="off">
-                        <input type="submit" value="Google Search">
+                        <div class="submits-container">
+                            <input type="submit" name="btnK" value="Google Search">
+                            <input type="submit" name="btnI" value="I'm Feeling Lucky">
+                        </div>
                     </form>
                 </div>            
             </main>             
             
             <footer>
-                <div class="copyright-container">@Copyright 2024, Richard Alva</div>
+                <p>© 2024 Richard Alva. Todos los derechos reservados.</p>
             </footer>
         </div>
 

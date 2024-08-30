@@ -14,25 +14,25 @@ header {
     position: relative;
 }
 
-.buttons-container{
+.links-container{
     display: flex;
     position: absolute;
     top: 15px;
     right: 30px;
 }
 
-.buttons-container a {
+.links-container a {
     padding: 10px;
 }
 
 main {
-    flex: 84;
+    flex: 80;
     position: relative;
 }
 
 .search-container {   
     position:absolute;
-    top: 30%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -96,14 +96,16 @@ input[type="submit"]:hover {
 }
 
 footer {
-    flex: 8;
-    align-content: center;
-    padding: 10px;
+    flex: 12;
+    position: relative;
 }
 
-.copyright-container {
-    text-align: center;
- }
+footer p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
  @media (max-width: 600px) {
     input[type="submit"] {

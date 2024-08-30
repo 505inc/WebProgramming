@@ -1,0 +1,128 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    flex: 8;
+    position: relative;
+}
+
+.links-container{
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 30px;
+}
+
+.links-container a {
+    padding: 10px;
+}
+
+main {
+    flex: 80;
+    position: relative;
+}
+
+.search-container {   
+    position:absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.search-container img {
+    padding: 20px;
+    width: 300px;
+}
+
+.search-container span {
+    position: absolute;
+    top: 45%;
+    right: 15%;
+    color: blue;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+input[type="text"] {
+    margin-bottom: 10px;
+    font-size: 14px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    color: #333;
+    height: 2.5em;
+    width: 35em;
+    padding-left: 25px;
+}
+
+input[type="text"]:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5);
+    
+}
+
+input[type="text"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="submit"] {
+    width: 10em;
+    height: 2.5em;
+    font-size: 14px;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    color: #333;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    flex: 12;
+    position: relative;
+}
+
+footer p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+ @media (max-width: 600px) {
+    input[type="submit"] {
+        width: 8em;
+        height: 2em;        
+        font-size: 10px;
+    }
+    input[type="text"] {
+        width: 25em;
+        height: 2em;
+        font-size: 10px;
+    }
+    .search-container img {
+        width: 175px;
+    }
+    body {
+        font-size: 10px;
+    }
+
+}
