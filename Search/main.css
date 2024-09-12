@@ -116,7 +116,7 @@ footer p {
     input[type="submit"] {
         width: 8em;
         height: 2em;        
-        font-size: 10px;
+        font-size: px;
     }
     input[type="text"] {
         width: 25em;

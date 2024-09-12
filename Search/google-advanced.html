@@ -6,6 +6,7 @@
         <title>Google Advanced</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+        <link rel='stylesheet' type='text/css' media='screen' href='styles-google-advanced.css'>
         <script src='main.js'></script>
     </head>
     
@@ -18,17 +19,39 @@
             </header>
             
             <main>
-                <div class="search-container">
-                    <img src="google-logo.png" alt="Google Logo" />
-                    <form action="https://www.google.com/search">
-                        <input type="text" name="q" autocomplete="off">
-                        <input type="submit" value="Google Search">
+                <div class="as-container">
+                    <div class="as-header">
+                        <label>Advanced search</label>      
+                    </div>                             
+
+                    <form action="https://www.google.com/search" class="as-main">
+                        <label id="options-element1">Search for pages with...</label>   
+
+                        <label id="options-element2">all these words:</label>
+
+                        <input id="options-element3" name="as_q" class="options-input" autocomplete="off">   
+
+                        <label id="options-element4">this exact word or phrase:</label>
+
+                        <input id="options-element5" name="as_epq" class="options-input" autocomplete="off">
+
+                        <label id="options-element6">any of these words:</label>
+
+                        <input id="options-element7" name="as_oq" class="options-input autocomplete="off">  
+
+                        <label id="options-element8">none of these words:</label>
+
+                        <input id="options-element9" name="as_eq" class="options-input" autocomplete="off">
+
+                        <div id="as-search-button" >
+                            <input type="submit" name="" value="Advanced Search">
+                        </div>                        
                     </form>
-                </div>            
-            </main>             
+                </div>     
+            </main> 
             
             <footer>
-                <p>© 2024 Richard Alva. Todos los derechos reservados.</p>
+                <p>© 2024 Richard Alva</p>
             </footer>
         </div>
 
