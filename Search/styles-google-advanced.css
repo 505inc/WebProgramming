@@ -19,10 +19,11 @@
 .as-main {
     flex: 9;
     display: grid;
+    gap: 10px;
     grid-template-columns: 1fr 2fr;
     margin-left: 30px;
     margin-top: 20px;
-    width: 40%;
+    width: 60%;
 }
 
 #options-element1 {
@@ -54,4 +55,25 @@
     color: #fff;
     background-color: #4d90fe;
     border: 1px solid #3079ed;    
+}
+
+@media (width > 1024px) {
+    .as-main{
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    .as-main{
+        width: 80%;
+    }
+    .as-header{
+        font-size: 15px;
+    }
+    .options-input {
+        font-size:9px;  
+    }
+    #options-element1 {
+        font-size: 12px;  
+    }
 }

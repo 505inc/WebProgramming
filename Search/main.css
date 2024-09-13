@@ -18,11 +18,11 @@ header {
     display: flex;
     position: absolute;
     top: 15px;
-    right: 30px;
+    right: 15px;
 }
 
 .links-container a {
-    padding: 10px;
+    padding: 8px;
 }
 
 main {
@@ -112,22 +112,28 @@ footer p {
     transform: translate(-50%, -50%);
 }
 
- @media (max-width: 600px) {
+@media (max-width: 600px) {
+    .links-container{
+        right: 5px;
+    }
     input[type="submit"] {
-        width: 8em;
+        width: 10em;
         height: 2em;        
-        font-size: px;
+        font-size: 12px;      
+        margin: 8px 2px;
+        padding: 0 10px;
     }
     input[type="text"] {
         width: 25em;
         height: 2em;
-        font-size: 10px;
+        font-size: 12px;
+        width: 20em;
     }
     .search-container img {
         width: 175px;
     }
     body {
-        font-size: 10px;
+        font-size: 12px;
     }
 
 }
