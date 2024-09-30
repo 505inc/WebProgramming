@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="title">
+        MyRestaurant Survey Form
+    </h1>
+    <p id="description">
+        Thank you for coming to my resturant! Please leave us a review.
+    </p>
+    <section>
+        <form id="survey-form">
+            <label id="name-label" for="name" class="flex-container"><h2>Name</h2> <input type="text" id="name" name="name" placeholder="Enter your name"></label>
+            <label id="email-label" for="email" class="flex-container"><h2>Email:</h2> <input type="email" id="email" name="email"  placeholder="Enter your email"></label>
+            <label id="number-label" for="number" class="flex-container"><h2>Age:</h2> <input type="number" id="number" name="number" placeholder="Enter your age"min="0" max="120"></label>
+            <label class="flex-container">
+                <h2>Gender:</h2>
+                <select id="dropdown" name="Gender">
+                    <option value="">Select your gender</option>
+                    <option value="1">Male</option>
+                    <option value="2 ">Female</option>
+                    <option value="3">Other</option>
+                </select>
+            </label>
+            <label class="flex-container">
+                <h2>Would you recommend my restaurant?</h2>
+                <label for="definetely"><input type="radio" id="definetely" name="recommend-checkbox" class="inline" value="Definetely" checked> Definitely</label>
+                <label for="maybe"><input type="radio" id="maybe" name="recommend-checkbox" class="inline" value="Maybe"> Maybe</label>
+                <label for="not-sure"><input type="radio" id="not-sure" name="recommend-checkbox" class="inline" value="Not-Sure"> Not sure</label>
+            </label>
+            <label class="flex-container">
+                <h2>Which meal would you recommend?</h2>
+                <label><input type="checkbox" id="Korean burguer" value="Korean burguer"> Korean Burguer</label>
+                <label><input type="checkbox" id="Vegan burguer" value="Vegan burguer"> Vegan Burguer</label>
+                <label><input type="checkbox" id="Cheeseburguer" value="Cheeseburguer"> Cheeseburguer</label>
+                <label><input type="checkbox" id="French fries" value="French fries"> French fries</label>
+            </label>
+            <label class="flex-container">
+                <h2>Leave us an honest review:</h2>
+                <textarea>Enter your comment here...</textarea>
+            </label>            
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </section>
+</body>
+<footer></footer>
+</html>
